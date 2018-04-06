@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.e3.service.user.mapper.SysPermissionMenuMapper" >
+
+  <select id="findByMenu" parameterType="String" resultType="com.e3.service.user.pojo.SysPermission">
+    SELECT
+    *
+    FROM
+    sys_permission
+    WHERE type='menu' and
+    id IN (
+    SELECT
+    sys_permission_id
+    FROM
+    sys_role_permission
+    WHERE
+    sys_role_id in (
+    SELECT
+    sys_role_id
+    FROM
+    sys_user_role
+    WHERE
+    sys_user_id = #{userid}
+    )
+    )
+  </select>
+
+  <select id="findByPermission" parameterType="String" resultType="com.e3.service.user.pojo.SysPermission">
+    SELECT
+    *
+    FROM
+    sys_permission
+    WHERE type='permission' and
+    id IN (
+    SELECT
+    sys_permission_id
+    FROM
+    sys_role_permission
+    WHERE
+    sys_role_id in (
+    SELECT
+    sys_role_id
+    FROM
+    sys_user_role
+    WHERE
+    sys_user_id = #{userid}
+    )
+    )
+  </select>
+
+</mapper>

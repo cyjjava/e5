@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.e3.service.search.mapper.SearchMapper" >
+
+  <!--查询规格参数-->
+  <select id="queryAllIdnex" resultType="com.e3.service.search.pojo.SearchDTO">
+    SELECT
+    t.image,
+    t.id,
+    t.price,
+    t.sell_point sellPoint,
+    t.title,
+    c.`name` itemName,
+    d.item_desc itemDesc
+    FROM
+    tb_item t,
+    tb_item_cat c,
+    tb_item_desc d
+    WHERE
+    t.cid = c.id
+    AND t.id = d.item_id
+  </select>
+
+
+  <select id="queryByItemId" resultType="com.e3.service.search.pojo.SearchDTO" parameterType="Long">
+    SELECT
+    t.image,
+    t.id,
+    t.price,
+    t.sell_point sellPoint,
+    t.title,
+    c.`name` itemName,
+    d.item_desc itemDesc
+    FROM
+    tb_item t,
+    tb_item_cat c,
+    tb_item_desc d
+    WHERE
+    t.cid = c.id
+    AND t.id = d.item_id AND  t.id=#{itemid}
+  </select>
+</mapper>

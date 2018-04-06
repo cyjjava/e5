@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="e3-api-content" />
+        <module name="e3-api-goods" />
+        <module name="e3-api-order" />
+        <module name="e3-api-search" />
+        <module name="e3-api-user" />
+        <module name="e3-common" />
+        <module name="e3-common-config" />
+        <module name="e3-service-content" />
+        <module name="e3-service-goods" />
+        <module name="e3-service-order" />
+        <module name="e3-service-search" />
+        <module name="e3-service-user" />
+        <module name="e3-web-cart" />
+        <module name="e3-web-item" />
+        <module name="e3-web-manager" />
+        <module name="e3-web-order" />
+        <module name="e3-web-portal" />
+        <module name="e3-web-search" />
+        <module name="e3-web-sso" />
+        <module name="fastdfs-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="e3" target="1.8" />
+      <module name="e3-api-content" target="1.8" />
+      <module name="e3-api-goods" target="1.8" />
+      <module name="e3-api-order" target="1.8" />
+      <module name="e3-api-search" target="1.8" />
+      <module name="e3-api-user" target="1.8" />
+      <module name="e3-common" target="1.8" />
+      <module name="e3-common-config" target="1.8" />
+      <module name="e3-service-content" target="1.8" />
+      <module name="e3-service-goods" target="1.8" />
+      <module name="e3-service-order" target="1.8" />
+      <module name="e3-service-search" target="1.8" />
+      <module name="e3-service-user" target="1.8" />
+      <module name="e3-web-cart" target="1.8" />
+      <module name="e3-web-item" target="1.8" />
+      <module name="e3-web-manager" target="1.8" />
+      <module name="e3-web-order" target="1.8" />
+      <module name="e3-web-portal" target="1.8" />
+      <module name="e3-web-search" target="1.8" />
+      <module name="e3-web-sso" target="1.8" />
+      <module name="fastdfs-client" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
