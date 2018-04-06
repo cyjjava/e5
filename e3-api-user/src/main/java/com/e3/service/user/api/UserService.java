@@ -7,7 +7,7 @@ import com.e3.service.user.pojo.TbUser;
  * Created by CYJ on 2018/3/6.
  */
 public interface UserService {
-
+   //dasd
     E3Result authRityUsername(String username,String pwd);
 
     E3Result checkUserParam(String params, int type);
