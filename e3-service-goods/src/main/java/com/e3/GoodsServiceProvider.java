@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Created by CYJ on 2018/3/5.
  */
 public class GoodsServiceProvider {
-
+  ///ssssss
     private static final Logger LOGGER = (Logger) LoggerFactory.getLogger(GoodsServiceProvider.class);
     public static void main(String[] args) {
         try {
